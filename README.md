@@ -19,7 +19,7 @@ fi
 
 ```
 
-Please make sure to replace `~/.bash_design` with the path for `.bash_design` file from your cloned repository.
+Please make sure to replace `CUSTOM_BASH_DESIGN_FILE_PATH` value with the path for `.bash_design` file from your cloned repository.
 
 ## Screenshots
 
