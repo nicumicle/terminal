@@ -27,10 +27,10 @@ Please make sure to replace `~/.bash_design` with the path for `.bash_design` fi
 ![terminal 1](https://github.com/nicumicle/terminal/blob/main/screenshots/1.png)
 
 ###  Terminal in a GIT folder with no files modified
-![terminal 2](https://github.com/nicumicle/terminal/blob/main/screenshots/1.png)
+![terminal 2](https://github.com/nicumicle/terminal/blob/main/screenshots/2.png)
 
 ### Terminal in a GIT folder with one modified file
-![terminal 3](https://github.com/nicumicle/terminal/blob/main/screenshots/1.png)
+![terminal 3](https://github.com/nicumicle/terminal/blob/main/screenshots/3.png)
 
 ## Tested on OS:
 - Ubuntu 20.04
