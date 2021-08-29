@@ -1,0 +1,22 @@
+## Add branch name on the terminal
+parse_git_branch() {
+ 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
+
+## Display if there are any changes in the git repository
+git_changes() {
+    inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
+    
+    if [ "$inside_git_repo" ]; then
+	   changes=$(git status --porcelain | wc -l)
+      if  [[ "$changes" -eq "0" ]]; then
+     	  # echo -e '\xf0\x9f\x9f\xa2'
+   	   echo -e "\e[1;42m $changes \e[00m"
+      else
+   	   echo -e "\e[1;41m $changes \e[00m"
+      fi
+    fi    
+}
+
+export PS1="\[\e[1;43m\]\u\[\e[00m\] \[\e[0;44m\]\w\[\e[00m\] \[\e[1;45m\]\$(parse_git_branch)\[\e[00m\]\$(git_changes)\n$ "
+
